@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="Ejercicio4.css">
+</head>
+<body>
+    <h1>Calculadora de Letra de DNI</h1>
+    <form>
+        <label for="dni">Número de DNI:</label>
+        <input type="text" id="dni" name="dni" title="Introduce un número de 7 u 8 dígitos" required>
+        <button type="button" class="btn btn-primary" onclick="calcularLetraDNI()">Calcular Letra</button>
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='../index.html'">Volver a la página de inicio</button>
+    </form>
+    <div id="resultado" class="result"></div>
+    <script src="Ejercicio4.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        #boton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="boton" onclick="mostrarMensaje()">Haz clic aquí</button>
+    <div id="mensaje" style="display: none;"></div>
+    <script>
+        function mostrarMensaje() {
+            var mensaje = document.getElementById("mensaje");
+            mensaje.innerHTML = "Hola mundo";
+            mensaje.style.display = "block";
+            console.log("Hola mundo");
+            alert("Hola mundo");
+        }
+    </script>
+</body>
+</html>

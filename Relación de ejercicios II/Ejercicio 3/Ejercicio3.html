@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="Ejercicio3.css">
+</head>
+<body>
+    <h1>Calculadora de Circunferencia, Área y Volumen</h1>
+    <form id="circunferencia">
+        <div class="form-group">
+            <label for="radio">Radio de la circunferencia:</label>
+            <input type="number" id="radio" name="radio" class="form-control" required>
+            <div class="error-numero">
+                <p>Por favor, introduce un número positivo.</p>
+            </div>
+        </div>
+        <button type="button" id="calcularBtn" class="btn btn-primary" >Calcular</button>
+        <button type="button" id="volverBtn" class="btn btn-secondary" >Volver a la página de inicio</button>
+    </form>
+    <div id="resultados">
+        <ul id="resultadosLista" class="result-list"></ul>
+    </div>
+    <div class="theme-buttons">
+        <button type="button" id="oscuroBtn" class="btn btn-oscuro">Modo Oscuro</button>
+        <button type="button" id="claroBtn" class="btn btn-claro" >Modo Claro</button>
+    </div>
+    <script src="Ejercicio3.js"></script>
+</body>
+</html>

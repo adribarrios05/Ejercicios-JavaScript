@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="Ejercicio9.css">
+</head>
+<body>
+    <h1>Seleccionar Mes</h1>
+    <form id="mesForm">
+        <div class="form-group">
+            <label for="numeroMes">Elige un número de mes:</label>
+            <select id="numeroMes" name="numeroMes" class="form-control" required>
+                <option value="" disabled selected>Selecciona un mes</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="mostrarMes()">Mostrar Mes</button>
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='../index.html'">Volver a la página de inicio</button>
+    </form>
+    <div id="resultado" class="result"></div>
+    <script src="Ejercicio9.js"></script>
+</body>
+</html>
